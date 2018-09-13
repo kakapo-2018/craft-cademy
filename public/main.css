@@ -65,11 +65,17 @@ button {
 height:100px;
 width: 100px
 }
+
 #equalsImg{
   margin-left: 20px;
   margin-top: 20px;
   height: 60px;
    width: 60px;
+}
+
+#testmark{
+  height: 30px;
+  width: 30px;
 }
 
 .backpackmixer{
