@@ -5,8 +5,78 @@
   border-radius: 50%;
 }
 
+#map{
+  width: 900px;
+  height: 70vh;
+  position: absolute;
+  left: 800px;
+  top: 100px;
+}
+
+html{
+  background: url('./background.jpg') no-repeat center center fixed;
+  height: 900px;
+}
+
 button {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
+}
+
+.pagewrapper{
+  display: flex;
+  flex-direction: row;
+}
+
+.backpack{
+  width: 500px;
+  /* height: 70vh; */
+  display: flex;
+  justify-content:center;
+  position: absolute;
+  flex-wrap: wrap;
+  left: 50px;
+  top: 150px;
+}
+
+.mixArea{
+  width: 500px;
+  /* height: 70vh; */
+  display: flex;
+  justify-content:center;
+  position: absolute;
+  flex-wrap: wrap;
+  left: 80px;
+  top: 700px;
+}
+
+.backPackSlot, .mixSlot, .finalSlot{
+  background-color: black;
+    width: 100px;
+  height: 100px;
+  margin: 2px
+}
+
+.finalSlot{
+  margin-left: 15px; 
+}
+.imageDiv{
+height:100px;
+width: 100px
+}
+#equalsImg{
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 60px;
+   width: 60px;
+}
+
+.backpackmixer{
+  display: flex;
+  flex-direction: column
+}
+
+h1{
+  border: 1px black solid;
 }

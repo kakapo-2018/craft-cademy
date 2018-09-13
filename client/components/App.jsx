@@ -1,15 +1,26 @@
 import React from 'react'
 
-function getRandomLong() {
-  console.log(num)
-  var num = (Math.floor(Math.random() * 174).toFixed(4));
-  return num
-}
+import Header from './Header'
+import Backpack from './Backpack'
+import MixArea from './MixArea'
+import Map from './Map'
+
+// function getRandomLong() {
+//   console.log(num)
+//   var num = (Math.floor(Math.random() * 174).toFixed(4));
+//   return num
+// }
 
 const App = () => (
   <div className='app-container'>
-    <h1>Hi</h1>
-    {getRandomLong()}
+    <Header />
+    <div className='pagewrapper'>
+    <div className='backpackmixer'>
+      <Backpack />
+      <MixArea />
+    </div>
+      <Map />
+    </div>
   </div>
 )
 
