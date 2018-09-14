@@ -1,7 +1,6 @@
 import React from 'react'
 import Test from './Test'
 
-<<<<<<< HEAD
 import Header from './Header'
 import Backpack from './Backpack'
 import MixArea from './MixArea'
@@ -23,13 +22,6 @@ const App = () => (
     </div>
       <Map />
     </div>
-=======
-
-const App = () => (
-  <div className='app-container'>
-    <h1>Hi</h1>
-    <Test />
->>>>>>> 63a5b06d4a9909d0ecfbe5754ac57a8e574a87d5
   </div>
 )
 
