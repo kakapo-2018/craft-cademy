@@ -4,7 +4,7 @@
   "description": "React Redux using express",
   "main": "server/index.js",
   "scripts": {
-    "start": "webpack && node server",
+    "start": "webpack & node server ",
     "dev": "nodemon --watch server & webpack --watch"
   },
   "author": "EDA",
@@ -16,8 +16,7 @@
     ]
   },
   "devDependencies": {
-    "nodemon": "^1.14.12",
-    "webpack-dev-server": "^2.11.1"
+    "nodemon": "^1.14.12"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
@@ -25,6 +24,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "express": "^4.16.2",
+    "google-map-react": "^1.0.6",
     "knex": "^0.15.2",
     "pg": "^7.4.3",
     "react": "^16.2.0",
