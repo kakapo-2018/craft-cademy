@@ -2,18 +2,25 @@ import request from 'superagent'
 
 const beerAPI = 'http://localhost:3000/api/beer'
 
-export function drinkBeers(callback) {
-  request
+export function drinkBeers() {
+  return request
     .get(beerAPI)
-    .end((err, res) => {
-      callback(err, res.body)
-    })
+    .then(res => res.body)
+    // .end((err, res) => {
+    //   callback(err, res.body)
+    // })
 }
 
-export function drinkBeer(callback, id) {
-  request
+export function drinkBeer(id) {
+  return request
     .get(`${beerAPI}/${id}`)
-    .end((err, res) => {
-      callback(err, res.body)
-    })
+    .then((res)=>{
+      console.log('this is res' , res)
+    return res})
+    .then(res => res.body)
+    .catch(err => console.log(err))
+    
+    // .end((err, res) => {
+    //   callback(err, res.body)
+    // })
 }

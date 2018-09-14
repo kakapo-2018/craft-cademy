@@ -1,9 +1,15 @@
-let nextWordId = 0
 
-export const addWord = (word) => {
+
+export const addBeer = (beer) => {
   return {
-    type: 'ADD_WORD',
-    id: nextWordId++,
-    word
+    type: 'ADD_BEER',
+    beer: beer
+  }
+}
+
+export const addBeerToMarker = (beer) => {
+  return {
+    type: 'ADD_TO_MARKER',
+    beerArray: beer
   }
 }

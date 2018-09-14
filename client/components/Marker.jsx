@@ -1,5 +1,7 @@
 import React from 'react'
 import GoogleMapReact from 'google-map-react'
+import {addBeer} from '../actions/index'
+import {connect} from 'react-redux'
 
 
 
@@ -20,20 +22,22 @@ class Marker extends React.Component {
 
     render(){
         return(
+            
             <React.Fragment>
-
+                
+    {console.log(this.props)}
             <figure className='imageDiv'>
-            <img onClick={()=>console.log('hi')
-            } id='testmark' src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Equals_sign.svg/2000px-Equals_sign.svg.png" style={{
+            <img onClick={()=>props.dispatch(addBeer('SOMEBEER'))}
+             id='testmark' src="./bottle.png" style={{
                 display: 'inline-flex',
                 alignItems: 'center',
                 justifyContent: 'center',
             }} />
-            <figcaption className='tooltiptext'>Stout</figcaption>
+            <figcaption className='tooltiptext'>{this.props.name}</figcaption>
             </figure>
               </React.Fragment>   
 
         )
     }
 }
-export default Marker
+export default connect()(Marker)

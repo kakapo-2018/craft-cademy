@@ -13,9 +13,10 @@ router.get('/', (req, res) => {
 })
 
 router.get('/:id', (req, res) => {
-  console.log(req.params.id)
   db.getBeerByID(req.params.id).then((beer) => {
     res.json(beer)
+    console.log(beer)
+    
   })
 })
 
