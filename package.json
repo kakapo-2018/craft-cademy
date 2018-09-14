@@ -32,6 +32,11 @@
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "sqlite3": "^4.0.2",
+<<<<<<< HEAD
     "webpack": "^3.0"
+=======
+    "superagent": "^3.8.3",
+    "webpack": "^3"
+>>>>>>> 63a5b06d4a9909d0ecfbe5754ac57a8e574a87d5
   }
 }
