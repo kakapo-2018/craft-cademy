@@ -14,9 +14,9 @@ export function drinkBeers() {
 export function drinkBeer(id) {
   return request
     .get(`${beerAPI}/${id}`)
-    .then((res)=>{
-      console.log('this is res' , res)
-    return res})
+    // .then((res)=>{
+    //   console.log("")
+    // return res})
     .then(res => res.body)
     .catch(err => console.log(err))
     

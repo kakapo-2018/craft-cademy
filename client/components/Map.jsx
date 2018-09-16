@@ -10,6 +10,8 @@ function Map (props) {
 
   let db = props.displayBeer
 
+
+
   return (
 
     <div id="map">
@@ -19,8 +21,7 @@ function Map (props) {
                     defaultZoom={14}>
       
       
-  {db.length && 
-      <Marker lat={Number(db[0].lat)} lng ={Number(db[0].lng)} name={db[0].name} />}
+      {db.length && <Marker lat={Number(db[0].lat)} lng ={Number(db[0].lng)} name={db[0].name} />}
 
       {db.length &&  <Marker lat={Number(db[1].lat)} lng ={Number(db[1].lng)} name={db[1].name}/>}
       {db.length &&  <Marker lat={Number(db[2].lat)} lng ={Number(db[2].lng)} name={db[2].name}/>}
@@ -36,7 +37,7 @@ function Map (props) {
 }
 
 function mapStateToProps(state){
-  console.log(state)
+  // console.log(state)
   
   return {
     displayBeer: state.addBeerToMarker
