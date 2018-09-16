@@ -6,38 +6,26 @@ import {connect} from 'react-redux'
 
 
 
-class Marker extends React.Component {
-    constructor(props){
-        super(props)
+function Marker (props) {
+
     
-            
-        this.state = {
-            cafe: {}
-        }
-
-        
-
-    }
-
-
-    render(){
         return(
             
             <React.Fragment>
                 
-    {console.log(this.props)}
+    {/* {console.log('these are the proprs ' + this.props.name)} */}
             <figure className='imageDiv'>
-            <img onClick={()=>props.dispatch(addBeer('SOMEBEER'))}
+            <img onClick={()=>props.dispatch(addBeer(props.name))}
              id='testmark' src="./bottle.png" style={{
                 display: 'inline-flex',
                 alignItems: 'center',
                 justifyContent: 'center',
             }} />
-            <figcaption className='tooltiptext'>{this.props.name}</figcaption>
+            <figcaption className='tooltiptext'>{props.name}</figcaption>
             </figure>
               </React.Fragment>   
 
         )
-    }
+    
 }
 export default connect()(Marker)

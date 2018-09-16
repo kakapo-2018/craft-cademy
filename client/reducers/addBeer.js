@@ -3,7 +3,7 @@ import {ADD_BEER} from '../actions'
 const addBeer = (state = [], action) => {
   switch (action.type) {
     case 'ADD_BEER':
-        if(state.length>8){
+        if(state.length>7){
           return
         } else {
           return [...state, action.beer]
