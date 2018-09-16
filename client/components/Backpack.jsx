@@ -6,7 +6,7 @@ import {drinkBeers} from '../beerAPIs/api'
 
 function Backpack(props) {
   drinkBeers().then(beer => {
-    beer.map(indiv => console.log(indiv.name))
+    beer.map(indiv => console.log(indiv.image))
   })
  
   
